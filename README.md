@@ -49,18 +49,22 @@ _Note : all grounds in LV are connected together_
 4. Open Serial Monitor in Arduino Software and add `Serial.println(voltage);` in your `loop()` to check the voltage in the analog inputs
 
 **Nothing except 0.00 are logged :**
+
 5. Check again **1.**, **2.**, **3.** & **4.**
 
 **I see voltage fluctuation**
+
 5. Read next troubleshoot
 
 ### I receive analog input but my outputs are not working
 1. Add a control LED on the Arduino instead of a LED strip
 
 **The LED is not blinking**
+
 2. Check the wiring and your `pinMode` in your `setup()`
 
 **The LED is blinking with the music**
+
 2. Verify the electronics & wiring
 
 ## Features in project
