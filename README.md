@@ -1,5 +1,6 @@
 # ledstrips
 LED strips lightshows for stage design (including analog listener).
+
 :warning: Some part of this project deal with high-voltage electronics, be careful !
 
 ## Requirement
@@ -19,7 +20,9 @@ _This list is non-exhaustive: it depends of your project_
 
 ## Electronic mapping
 _This is a map for a full operating system: use only the elements you need_
+
 :warning: Always be careful with high-voltage !
+
 ![Electronic map](https://github.com/gabrielstik/ledstrips/blob/master/map.png)
 
 #### Wires
@@ -29,7 +32,7 @@ _This is a map for a full operating system: use only the elements you need_
 * **Analog ground :** dark blue wire
 * **Digital outputs :** other colors
 
-##### Components
+#### Components
 * **Circles :** peripherals components
 * **Squares :** sources
 * **Small rectangles :** main output components (LED strips & 1500W strobe)
@@ -44,15 +47,19 @@ _Note : all grounds in LV are connected together_
 2. Check if wires from jack are plug in the rights analog inputs
 3. In the algorithm, check if analog inputs are correctly read
 4. Open Serial Monitor in Arduino Software and add `Serial.println(voltage);` in your `loop()` to check the voltage in the analog inputs
+
 **Nothing except 0.00 are logged :**
 5. Check again **1.**, **2.**, **3.** & **4.**
+
 **I see voltage fluctuation**
 5. Read next troubleshoot
 
 ### I receive analog input but my outputs are not working
 1. Add a control LED on the Arduino instead of a LED strip
+
 **The LED is not blinking**
 2. Check the wiring and your `pinMode` in your `setup()`
+
 **The LED is blinking with the music**
 2. Verify the electronics & wiring
 
