@@ -1,7 +1,7 @@
 # ledstrips
 LED strips lightshows for stage design (including analog listener).
 
-:warning: Some part of this project deal with high-voltage electronics, be careful !
+:warning: Some parts of this project deal with high-voltage electronics, be careful !
 
 ## Requirement
 
